@@ -1,0 +1,45 @@
+{
+  "title": "Quiz z programowania",
+  "questions": [
+    {
+      "question": "Jaki jest wynik działania 2 + 2 w JavaScript?",
+      "answer": "4"
+    },
+    {
+      "question": "Jakie słowo kluczowe służy do deklaracji zmiennej w JavaScript (ES6)?",
+      "answer": "let"
+    },
+    {
+      "question": "Co oznacza skrót HTML?",
+      "answer": "hypertext markup language"
+    },
+    {
+      "question": "Jaki znacznik HTML służy do tworzenia nagłówka pierwszego poziomu?",
+      "answer": "h1"
+    },
+    {
+      "question": "Jaki jest podstawowy typ danych dla prawdy/fałszu w JavaScript?",
+      "answer": "boolean"
+    },
+    {
+      "question": "Jak nazywa się biblioteka React do zarządzania stanem?",
+      "answer": "redux"
+    },
+    {
+      "question": "Jaki operator służy do porównania wartości i typu w JavaScript?",
+      "answer": "==="
+    },
+    {
+      "question": "Co oznacza skrót CSS?",
+      "answer": "cascading style sheets"
+    },
+    {
+      "question": "Jaka metoda tablicy dodaje element na końcu w JavaScript?",
+      "answer": "push"
+    },
+    {
+      "question": "Jak nazywa się język zapytań do baz danych?",
+      "answer": "sql"
+    }
+  ]
+}
