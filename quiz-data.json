@@ -1,45 +1,58 @@
 {
-  "title": "Quiz z programowania",
+  "title": "Czasowniki nieregularne - niemiecki",
   "questions": [
-    {
-      "question": "Jaki jest wynik działania 2 + 2 w JavaScript?",
-      "answer": "4"
-    },
-    {
-      "question": "Jakie słowo kluczowe służy do deklaracji zmiennej w JavaScript (ES6)?",
-      "answer": "let"
-    },
-    {
-      "question": "Co oznacza skrót HTML?",
-      "answer": "hypertext markup language"
-    },
-    {
-      "question": "Jaki znacznik HTML służy do tworzenia nagłówka pierwszego poziomu?",
-      "answer": "h1"
-    },
-    {
-      "question": "Jaki jest podstawowy typ danych dla prawdy/fałszu w JavaScript?",
-      "answer": "boolean"
-    },
-    {
-      "question": "Jak nazywa się biblioteka React do zarządzania stanem?",
-      "answer": "redux"
-    },
-    {
-      "question": "Jaki operator służy do porównania wartości i typu w JavaScript?",
-      "answer": "==="
-    },
-    {
-      "question": "Co oznacza skrót CSS?",
-      "answer": "cascading style sheets"
-    },
-    {
-      "question": "Jaka metoda tablicy dodaje element na końcu w JavaScript?",
-      "answer": "push"
-    },
-    {
-      "question": "Jak nazywa się język zapytań do baz danych?",
-      "answer": "sql"
-    }
+    { "question": "backen", "answer": "bäckt hat gebacken" },
+    { "question": "beginnen", "answer": "beginnt hat begonnen" },
+    { "question": "bieten", "answer": "bietet hat geboten" },
+    { "question": "bitten", "answer": "bittet hat gebeten" },
+    { "question": "bleiben", "answer": "bleibt ist geblieben" },
+    { "question": "bringen", "answer": "bringt hat gebracht" },
+    { "question": "denken", "answer": "denkt hat gedacht" },
+    { "question": "empfehlen", "answer": "empfiehlt hat empfohlen" },
+    { "question": "essen", "answer": "isst hat gegessen" },
+    { "question": "fahren", "answer": "fährt ist gefahren" },
+    { "question": "fallen", "answer": "fällt ist gefallen" },
+    { "question": "finden", "answer": "findet hat gefunden" },
+    { "question": "fliegen", "answer": "fliegt ist geflogen" },
+    { "question": "geben", "answer": "gibt hat gegeben" },
+    { "question": "gehen", "answer": "geht ist gegangen" },
+    { "question": "haben", "answer": "hat hat gehabt" },
+    { "question": "halten", "answer": "hält hat gehalten" },
+    { "question": "hängen", "answer": "hängt hat gehangen" },
+    { "question": "helfen", "answer": "hilft hat geholfen" },
+    { "question": "kennen", "answer": "kennt hat gekannt" },
+    { "question": "kommen", "answer": "kommt ist gekommen" },
+    { "question": "lassen", "answer": "lässt hat gelassen" },
+    { "question": "laufen", "answer": "läuft ist gelaufen" },
+    { "question": "lesen", "answer": "liest hat gelesen" },
+    { "question": "liegen", "answer": "liegt hat gelegen" },
+    { "question": "nehmen", "answer": "nimmt hat genommen" },
+    { "question": "reiten", "answer": "reitet ist geritten" },
+    { "question": "rufen", "answer": "ruft hat gerufen" },
+    { "question": "scheinen", "answer": "scheint hat geschienen" },
+    { "question": "schlafen", "answer": "schläft hat geschlafen" },
+    { "question": "schließen", "answer": "schließt hat geschlossen" },
+    { "question": "schreiben", "answer": "schreibt hat geschrieben" },
+    { "question": "schwimmen", "answer": "schwimmt ist geschwommen" },
+    { "question": "sehen", "answer": "sieht hat gesehen" },
+    { "question": "sein", "answer": "ist ist gewesen" },
+    { "question": "singen", "answer": "singt hat gesungen" },
+    { "question": "sitzen", "answer": "sitzt hat gesessen" },
+    { "question": "sprechen", "answer": "spricht hat gesprochen" },
+    { "question": "springen", "answer": "springt ist gesprungen" },
+    { "question": "stehen", "answer": "steht hat gestanden" },
+    { "question": "steigen", "answer": "steigt ist gestiegen" },
+    { "question": "streiten", "answer": "streitet hat gestritten" },
+    { "question": "tragen", "answer": "trägt hat getragen" },
+    { "question": "treffen", "answer": "trifft hat getroffen" },
+    { "question": "trinken", "answer": "trinkt hat getrunken" },
+    { "question": "tun", "answer": "tut hat getan" },
+    { "question": "vergessen", "answer": "vergisst hat vergessen" },
+    { "question": "verlieren", "answer": "verliert hat verloren" },
+    { "question": "wachsen", "answer": "wächst ist gewachsen" },
+    { "question": "waschen", "answer": "wäscht hat gewaschen" },
+    { "question": "werden", "answer": "wird ist geworden" },
+    { "question": "wissen", "answer": "weiß hat gewusst" },
+    { "question": "ziehen", "answer": "zieht hat gezogen" }
   ]
 }
