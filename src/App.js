@@ -26,6 +26,15 @@ export default function App() {
       const data = JSON.parse(saved);
       setQuizTitle(data.title);
       setQuestions(data.questions);
+    } else {
+      // Load default quiz data from JSON file
+      fetch("/adaptive-quiz/quiz-data.json")
+        .then(res => res.json())
+        .then(data => {
+          setQuizTitle(data.title);
+          setQuestions(data.questions);
+        })
+        .catch(err => console.error("Failed to load quiz data:", err));
     }
   }, []);
 
