@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/adaptive-quiz/static/css/main.75bc90ff.css",
+    "main.js": "/adaptive-quiz/static/js/main.a0e27aaf.js",
+    "index.html": "/adaptive-quiz/index.html",
+    "main.75bc90ff.css.map": "/adaptive-quiz/static/css/main.75bc90ff.css.map",
+    "main.a0e27aaf.js.map": "/adaptive-quiz/static/js/main.a0e27aaf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75bc90ff.css",
+    "static/js/main.a0e27aaf.js"
+  ]
+}
