@@ -14,6 +14,7 @@ export default function App() {
   const [attempts, setAttempts] = useState(0);
   const [correct, setCorrect] = useState(0);
   const [feedback, setFeedback] = useState("");
+  const [showWrongAnswer, setShowWrongAnswer] = useState(false);
 
   const [qText, setQText] = useState("");
   const [aText, setAText] = useState("");
@@ -50,10 +51,13 @@ export default function App() {
   // QUIZ
   const startQuiz = () => {
     if (questions.length === 0) return;
-    setQueue([...questions]);
+    // Shuffle questions for random order
+    const shuffled = [...questions].sort(() => Math.random() - 0.5);
+    setQueue(shuffled);
     setAttempts(0);
     setCorrect(0);
     setFeedback("");
+    setShowWrongAnswer(false);
     setMode("quiz");
   };
 
@@ -64,15 +68,52 @@ export default function App() {
       setCorrect(c => c + 1);
       setQueue(q => q.slice(1));
       setFeedback("✅ Dobrze");
+      setShowWrongAnswer(false);
     } else {
-      setQueue(q => [...q.slice(1), current]);
       setFeedback("❌ Źle – wróci");
+      setShowWrongAnswer(true);
     }
     setInput("");
   };
 
+  const continueToNext = () => {
+    // Shuffle remaining questions when moving wrong answer to end
+    const remaining = queue.slice(1);
+    const shuffledRemaining = [...remaining, current].sort(() => Math.random() - 0.5);
+    setQueue(shuffledRemaining);
+    setShowWrongAnswer(false);
+    setFeedback("");
+  };
+
+  const insertChar = (char) => {
+    setInput(prev => prev + char);
+  };
+
   const score =
     attempts === 0 ? 0 : Math.round((correct / attempts) * 100);
+
+  // COMPARE ANSWERS
+  const compareAnswers = (userAnswer, correctAnswer) => {
+    const user = userAnswer.trim().toLowerCase();
+    const correct = correctAnswer.toLowerCase();
+    const maxLen = Math.max(user.length, correct.length);
+    
+    const comparison = [];
+    for (let i = 0; i < maxLen; i++) {
+      if (user[i] === correct[i]) {
+        comparison.push({ char: correct[i] || "", isWrong: false, extra: false });
+      } else if (i >= user.length) {
+        comparison.push({ char: correct[i], isWrong: false, isMissing: true });
+      } else if (i >= correct.length) {
+        comparison.push({ char: user[i], isWrong: true, extra: true });
+      } else {
+        comparison.push({ char: user[i], isWrong: true, extra: false });
+      }
+    }
+    return comparison;
+  };
+
+  const answerComparison = input && showWrongAnswer ? compareAnswers(input, current.answer) : null;
 
   // CREATOR
   const saveQuestion = () => {
@@ -237,13 +278,56 @@ export default function App() {
         <input
           value={input}
           onChange={e => setInput(e.target.value)}
-          onKeyDown={e => e.key === "Enter" && checkAnswer()}
+          onKeyDown={e => e.key === "Enter" && !showWrongAnswer && checkAnswer()}
           placeholder="Twoja odpowiedź"
+          disabled={showWrongAnswer}
         />
 
-        <button onClick={checkAnswer}>Sprawdź</button>
+        <div className="umlaut-buttons">
+          {["ä", "ö", "ü", "ß", "Ä", "Ö", "Ü"].map(char => (
+            <button
+              key={char}
+              className="umlaut-btn"
+              onClick={() => insertChar(char)}
+              disabled={showWrongAnswer}
+            >
+              {char}
+            </button>
+          ))}
+        </div>
+
+        {!showWrongAnswer && (
+          <button onClick={checkAnswer}>Sprawdź</button>
+        )}
 
         <div className="feedback">{feedback}</div>
+
+        {showWrongAnswer && (
+          <div className="wrong-answer-panel">
+            <div className="answer-comparison">
+              <div className="comparison-row">
+                <strong>Twoja odpowiedź:</strong>
+                <span className="comparison-text">
+                  {answerComparison && answerComparison.map((item, i) => (
+                    <span
+                      key={i}
+                      className={`char ${item.isWrong ? "wrong" : ""} ${item.isMissing ? "missing" : ""}`}
+                    >
+                      {item.extra && item.char ? item.char : (item.char || "□")}
+                    </span>
+                  ))}
+                </span>
+              </div>
+              <div className="comparison-row">
+                <strong>Poprawna odpowiedź:</strong>
+                <span className="comparison-text correct">
+                  {current.answer}
+                </span>
+              </div>
+            </div>
+            <button onClick={continueToNext}>Dalej →</button>
+          </div>
+        )}
 
         <div className="stats">
           <span>Próby: {attempts}</span>
