@@ -20,32 +20,35 @@ export default function App() {
   const [aText, setAText] = useState("");
   const [editIndex, setEditIndex] = useState(null);
 
-  // LOAD
-  useEffect(() => {
-    const saved = localStorage.getItem("quizData");
-    if (saved) {
-      const data = JSON.parse(saved);
+  // Default quizzes
+  const defaultQuizzes = [
+    { id: "quiz1", title: "Quiz 1 - Miesiące i daty" },
+    { id: "quiz2", title: "Quiz 2 - Państwa i podróżowanie" },
+    { id: "quiz3", title: "Quiz 3 - Nawigacja i komunikacja" }
+  ];
+
+  // LOAD DEFAULT QUIZ
+  const loadDefaultQuiz = async (quizId) => {
+    try {
+      const response = await fetch(`${window.location.origin}/adaptive-quiz/${quizId}.json`);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
       setQuizTitle(data.title);
       setQuestions(data.questions);
-    } else {
-      // Load default quiz data from JSON file
-      fetch("/adaptive-quiz/quiz-data.json")
-        .then(res => res.json())
-        .then(data => {
-          setQuizTitle(data.title);
-          setQuestions(data.questions);
-        })
-        .catch(err => console.error("Failed to load quiz data:", err));
+    } catch (err) {
+      console.error(`Failed to load ${quizId}:`, err);
+      alert(`Błąd ładowania ${quizId}`);
     }
+  };
+
+  // LOAD
+  useEffect(() => {
+    loadDefaultQuiz("quiz1");
   }, []);
 
   // SAVE
   const persist = updated => {
     setQuestions(updated);
-    localStorage.setItem(
-      "quizData",
-      JSON.stringify({ title: quizTitle, questions: updated })
-    );
   };
 
   // QUIZ
@@ -63,17 +66,19 @@ export default function App() {
 
   const checkAnswer = () => {
     setAttempts(a => a + 1);
-
-    if (input.trim().toLowerCase() === current.answer) {
+    console.log("Checking answer:", input, "against", current.answer);
+    if (input.trim().toLowerCase() === current.answer.toLowerCase()) {
       setCorrect(c => c + 1);
       setQueue(q => q.slice(1));
       setFeedback("✅ Dobrze");
       setShowWrongAnswer(false);
+      // Clear input immediately when the answer is correct (we advance automatically)
+      setInput("");
     } else {
       setFeedback("❌ Źle – wróci");
       setShowWrongAnswer(true);
+      // Keep the user's input so the comparison panel can show which letters are wrong
     }
-    setInput("");
   };
 
   const continueToNext = () => {
@@ -83,6 +88,8 @@ export default function App() {
     setQueue(shuffledRemaining);
     setShowWrongAnswer(false);
     setFeedback("");
+    // Now clear the input after the user clicked next
+    setInput("");
   };
 
   const insertChar = (char) => {
@@ -114,6 +121,7 @@ export default function App() {
   };
 
   const answerComparison = input && showWrongAnswer ? compareAnswers(input, current.answer) : null;
+
 
   // CREATOR
   const saveQuestion = () => {
@@ -203,6 +211,23 @@ export default function App() {
       <div className="app">
         <div className="card">
           <h2>Kreator</h2>
+
+          <div className="default-quizzes">
+            <p><strong>📚 Bazowe quizy:</strong></p>
+            <div className="quiz-buttons">
+              {defaultQuizzes.map(quiz => (
+                <button
+                  key={quiz.id}
+                  className="default-quiz-btn"
+                  onClick={() => loadDefaultQuiz(quiz.id)}
+                >
+                  {quiz.title}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <hr />
 
           <input
             value={quizTitle}

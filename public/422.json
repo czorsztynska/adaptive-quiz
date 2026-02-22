@@ -1,0 +1,34 @@
+{
+  "title": "Aktiver Wortschatz - Ferien, Reisen i Unterwegs - Całość",
+  "questions": [
+    {
+      "question": "miałbym termin u pani doktor X",
+      "answer": "Ich hätte gern einen Termin bei Frau Doktor X"
+    },
+    {
+      "question": "kiedy może pani/pan przyjść?",
+      "answer": "Wann können Sie kommen?"
+    },
+    { "question": "w czym mogę pomóc?", "answer": "Was kann ich für Sie tun?" },
+    {
+      "question": "proszę się rozebrać do pasa",
+      "answer": "Machen Sie bitte den Oberkörper frei"
+    },
+    { "question": "otwórz usta", "answer": "Öffnen Sie bitte den Mund" },
+    {
+      "question": "proszę oddychać głęboko",
+      "answer": "Atmen Sie bitte tief ein"
+    },
+    { "question": "czy ma pan/pani bóle?", "answer": "Haben Sie Schmerzen?" },
+    { "question": "czy ma pan/pani gorączkę?", "answer": "Haben Sie Fieber?" },
+    {
+      "question": "niech pan/pani przyjdzie za dwa dni",
+      "answer": "Kommen Sie in zwei Tagen wieder"
+    },
+    { "question": "źle się czuję", "answer": "Mir ist schlecht" },
+    {
+      "question": "mam silne bóle brzucha",
+      "answer": "Ich habe starke Bauchschmerzen"
+    }
+  ]
+}
