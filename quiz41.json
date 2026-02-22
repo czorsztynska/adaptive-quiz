@@ -1,0 +1,105 @@
+{
+  "title": "Aktiver Wortschatz - Ferien, Reisen i Unterwegs - Całość",
+  "questions": [
+    { "question": "ręka, ramię", "answer": "der Arm" },
+    { "question": "oko", "answer": "das Auge" },
+    { "question": "brzuch", "answer": "der Bauch" },
+    { "question": "noga", "answer": "das Bein" },
+    { "question": "stopa", "answer": "der Fuß" },
+    { "question": "twarz", "answer": "das Gesicht" },
+    { "question": "włosy", "answer": "das Haar" },
+    { "question": "gardło", "answer": "der Hals" },
+    { "question": "dłoń", "answer": "die Hand" },
+    { "question": "skóra", "answer": "die Haut" },
+    { "question": "głowa", "answer": "der Kopf" },
+    { "question": "ciało", "answer": "der Körper" },
+    { "question": "żołądek", "answer": "der Magen" },
+    { "question": "usta", "answer": "der Mund" },
+    { "question": "nos", "answer": "die Nase" },
+    { "question": "ucho", "answer": "das Ohr" },
+    { "question": "mam alergię", "answer": "Ich habe eine Allergie" },
+    { "question": "moje oczy są czerwone", "answer": "Meine Augen sind rot" },
+    {
+      "question": "moje włosy są przetłuszczone",
+      "answer": "Meine Haare sind trocken"
+    },
+    {
+      "question": "zaczęło mnie boleć gardło",
+      "answer": "Er hat Halsschmerzen bekommen"
+    },
+    {
+      "question": "boli mnie głowa",
+      "answer": "Der Kopf tut mir weh / Ich habe Kopfschmerzen / Mein Kopf tut weh"
+    },
+    { "question": "jestem zmęczona", "answer": "Sie ist müde" },
+    { "question": "mam przekrwione oczy", "answer": "Meine Augen sind rot" },
+    { "question": "cieknie mi z nosa", "answer": "Meine Nase läuft" },
+    { "question": "moja babcia jest chora", "answer": "Meine Oma ist krank" },
+    { "question": "mam katar", "answer": "Ich habe Schnupfen" },
+    { "question": "źle wyglądasz", "answer": "Du siehst aber schlecht aus" },
+    { "question": "jestem uczulony na", "answer": "Ich bin allergisch gegen" },
+    { "question": "leżeć w łóżku", "answer": "im Bett liegen" },
+    { "question": "mierzyć temperaturę", "answer": "die Temperatur messen" },
+    { "question": "zostać w domu", "answer": "zu Hause bleiben" },
+    {
+      "question": "czuć się źle / niedobrze",
+      "answer": "sich schlecht / nicht gut fühlen"
+    },
+    { "question": "co ci dolega?", "answer": "Was fehlt dir?" },
+    { "question": "co panu/pani dolega?", "answer": "Was fehlt Ihnen?" },
+    { "question": "jak się czujesz?", "answer": "Wie fühlst du dich?" },
+    { "question": "weź syrop na kaszel", "answer": "Nimm Hustensaft" },
+    { "question": "zostań w łóżku", "answer": "Bleib im Bett" },
+    { "question": "kosmetyk do włosów", "answer": "das Haarkosmetika" },
+    { "question": "środek na przeziębienie", "answer": "das Hausmittel" },
+    { "question": "prześpij się trochę", "answer": "Schlaf doch ein bisschen" },
+    {
+      "question": "powinieneś się wyspać",
+      "answer": "Du solltest ein bisschen schlafen"
+    },
+    {
+      "question": "wyjdź na świeże powietrze",
+      "answer": "Geh doch an die frische Luft"
+    },
+    {
+      "question": "powinieneś wyjść na świeże powietrze",
+      "answer": "Du solltest an die frische Luft gehen"
+    },
+    { "question": "pływaj regularnie", "answer": "Schwimme regelmäßig" },
+    { "question": "uprawiaj sport", "answer": "treibe Sport" },
+    {
+      "question": "powinieneś regularnie pływać i uprawiać sport",
+      "answer": "Du solltest regelmäßig schwimmen und Sport treiben"
+    },
+    { "question": "przyjmuj tabletki", "answer": "Nimm Tabletten" },
+    {
+      "question": "powinieneś przyjmować tabletki",
+      "answer": "Du solltest Tabletten nehmen"
+    },
+    { "question": "pij dużo wody", "answer": "Trink viel Wasser" },
+    {
+      "question": "powinieneś pić dużo wody",
+      "answer": "Du solltest viel Wasser trinken"
+    },
+    {
+      "question": "powinieneś w przyszłości mniej jeść słodyczy",
+      "answer": "Du solltest in Zukunft weniger Süßigkeiten essen"
+    },
+    {
+      "question": "muszę przyjmować lekarstwa",
+      "answer": "Ich muss Medikamente einnehmen"
+    },
+    {
+      "question": "powinno się pić tydzień wodę i zostać w domu",
+      "answer": "Man soll eine Woche nur Wasser trinken und zu Hause bleiben"
+    },
+    {
+      "question": "mam zjeść mniej słodyczy",
+      "answer": "Ich muss Süßes vermeiden"
+    },
+    {
+      "question": "życzę ci szybkiego powrotu do zdrowia",
+      "answer": "Gute Besserung"
+    }
+  ]
+}
