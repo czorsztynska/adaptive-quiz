@@ -1,0 +1,54 @@
+{
+  "title": "Aktiver Wortschatz - Ferien, Reisen i Unterwegs - Całość",
+  "questions": [
+    { "question": "prześpij się trochę", "answer": "Schlaf doch ein bisschen" },
+    {
+      "question": "powinieneś się wyspać",
+      "answer": "Du solltest ein bisschen schlafen"
+    },
+    {
+      "question": "wyjdź na świeże powietrze",
+      "answer": "Geh doch an die frische Luft"
+    },
+    {
+      "question": "powinieneś wyjść na świeże powietrze",
+      "answer": "Du solltest an die frische Luft gehen"
+    },
+    { "question": "pływaj regularnie", "answer": "Schwimme regelmäßig" },
+    { "question": "uprawiaj sport", "answer": "treibe Sport" },
+    {
+      "question": "powinieneś regularnie pływać i uprawiać sport",
+      "answer": "Du solltest regelmäßig schwimmen und Sport treiben"
+    },
+    { "question": "przyjmuj tabletki", "answer": "Nimm Tabletten" },
+    {
+      "question": "powinieneś przyjmować tabletki",
+      "answer": "Du solltest Tabletten nehmen"
+    },
+    { "question": "pij dużo wody", "answer": "Trink viel Wasser" },
+    {
+      "question": "powinieneś pić dużo wody",
+      "answer": "Du solltest viel Wasser trinken"
+    },
+    {
+      "question": "powinieneś w przyszłości mniej jeść słodyczy",
+      "answer": "Du solltest in Zukunft weniger Süßigkeiten essen"
+    },
+    {
+      "question": "muszę przyjmować lekarstwa",
+      "answer": "Ich muss Medikamente einnehmen"
+    },
+    {
+      "question": "powinno się pić tydzień wodę i zostać w domu",
+      "answer": "Man soll eine Woche nur Wasser trinken und zu Hause bleiben"
+    },
+    {
+      "question": "mam zjeść mniej słodyczy",
+      "answer": "Ich muss Süßes vermeiden"
+    },
+    {
+      "question": "życzę ci szybkiego powrotu do zdrowia",
+      "answer": "Gute Besserung"
+    }
+  ]
+}

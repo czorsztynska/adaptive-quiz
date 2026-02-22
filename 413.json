@@ -1,0 +1,18 @@
+{
+  "title": "Aktiver Wortschatz - Ferien, Reisen i Unterwegs - Całość",
+  "questions": [
+    { "pl": "jestem uczulony na", "answer": "Ich bin allergisch gegen" },
+    { "pl": "leżeć w łóżku", "answer": "im Bett liegen" },
+    { "pl": "mierzyć temperaturę", "answer": "die Temperatur messen" },
+    { "pl": "zostać w domu", "answer": "zu Hause bleiben" },
+    {
+      "pl": "czuć się źle / niedobrze",
+      "answer": "sich schlecht / nicht gut fühlen"
+    },
+    { "pl": "co ci dolega?", "answer": "Was fehlt dir?" },
+    { "pl": "co panu/pani dolega?", "answer": "Was fehlt Ihnen?" },
+    { "pl": "jak się czujesz?", "answer": "Wie fühlst du dich?" },
+    { "pl": "weź syrop na kaszel", "answer": "Nimm Hustensaft" },
+    { "pl": "zostań w łóżku", "answer": "Bleib im Bett" }
+  ]
+}

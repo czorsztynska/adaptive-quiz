@@ -3,9 +3,18 @@
   "questions": [
     { "question": "mam alergię", "answer": "Ich habe eine Allergie" },
     { "question": "moje oczy są czerwone", "answer": "Meine Augen sind rot" },
-    { "question": "moje włosy są przetłuszczone", "answer": "Meine Haare sind trocken" },
-    { "question": "zaczęło mnie boleć gardło", "answer": "Er hat Halsschmerzen bekommen" },
-    { "question": "boli mnie głowa", "answer": "Der Kopf tut mir weh / Ich habe Kopfschmerzen / Mein Kopf tut weh" },
+    {
+      "question": "moje włosy są przetłuszczone",
+      "answer": "Meine Haare sind trocken"
+    },
+    {
+      "question": "zaczęło mnie boleć gardło",
+      "answer": "Er hat Halsschmerzen bekommen"
+    },
+    {
+      "question": "boli mnie głowa",
+      "answer": "Der Kopf tut mir weh / Ich habe Kopfschmerzen / Mein Kopf tut weh"
+    },
     { "question": "jestem zmęczona", "answer": "Sie ist müde" },
     { "question": "mam przekrwione oczy", "answer": "Meine Augen sind rot" },
     { "question": "cieknie mi z nosa", "answer": "Meine Nase läuft" },
