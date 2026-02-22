@@ -22,9 +22,13 @@ export default function App() {
 
   // Default quizzes
   const defaultQuizzes = [
-    { id: "quiz1", title: "Quiz 1 - Miesiące i daty" },
-    { id: "quiz2", title: "Quiz 2 - Państwa i podróżowanie" },
-    { id: "quiz3", title: "Quiz 3 - Nawigacja i komunikacja" }
+    { id: "quiz1", title: "Quiz 1 - Części ciała" },
+    { id: "quiz2", title: "Quiz 2 - Choroby i dolegliwości" },
+    { id: "quiz3", title: "Quiz 3 - Czynności zdrowotne" },
+    { id: "quiz4", title: "Quiz 4 - Kosmetyki" },
+    { id: "quiz5", title: "Quiz 5 - Porady zdrowotne" },
+    { id: "quiz6", title: "Quiz 6 - Symptomy i stany" },
+    { id: "quiz7", title: "Quiz 7 - U lekarza" }
   ];
 
   // LOAD DEFAULT QUIZ
